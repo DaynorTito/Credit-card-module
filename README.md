@@ -7,9 +7,9 @@ El proyecto es un diseño para una aplicacion de gestion de targetas de credito 
 
 Se hizo uso de :
 - **Spring Framework** framework de Java
-- **MySQL (Railway)** como gestor de base de datos, y railwar y que ofrece servicios de base de datos en la nube.
+- **MySQL (Railway)** como gestor de base de datos, y railwar que ofrece servicios de base de datos en la nube.
 - **Lombok** como libreria para evitar la sobrecarga de codigo en metodos conocidos.
-- **Linter Checkstyle** permite codificar con estandares y cumpliendo reglas de Java.
+- **Linter Checkstyle** permite codificar con estandares de codificacion cumpliendo reglas de Java.
 - **Jacoco** para medir el alcance de las pruebas que se realizaron en el proyecto.
 - **Maven** como gestor de proyectos para compilar el proyecto.
 - **JavaMAIL** como servicio para enviar correos electronicos.
@@ -18,6 +18,7 @@ Se hizo uso de :
 
 ### Autores
 - David Lezama Trejo
+- Gadi Medero Gabriel
 - Carol Sivila Ramirez
 - Alejandro Valencia Rodriguez
 - Andres Rojas Espinoza
