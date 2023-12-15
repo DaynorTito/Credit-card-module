@@ -1,0 +1,17 @@
+org/jala/university/domain/services/MinimumPaymentCalculatorTest.class
+org/jala/university/domain/model/TransactionTest.class
+org/jala/university/controllers/GetCreditCardDataTest.class
+org/jala/university/domain/TransactionHistoryTest.class
+org/jala/university/domain/TransactionModuleImplTest.class
+org/jala/university/domain/CreditCardLimitTest.class
+org/jala/university/domain/RequestCreditCardTest.class
+org/jala/university/domain/model/payment/AutomaticPaymentTest.class
+org/jala/university/domain/ValidationsTest.class
+org/jala/university/domain/services/creditCardServicesTest/ExpirationDateGeneratorTest.class
+org/jala/university/controllers/RequestCreditCardControllerTest.class
+org/jala/university/domain/services/creditCardServicesTest/CreditCardServiceTest.class
+org/jala/university/controllers/CreateCreditCardControllerTest.class
+org/jala/university/domain/services/creditCardServicesTest/CvvGeneratorTest.class
+org/jala/university/domain/services/InterestCalculatorTest.class
+org/jala/university/controllers/GetAllAssociatedTransactionsTest.class
+org/jala/university/domain/services/EmailNotificationServiceTest.class

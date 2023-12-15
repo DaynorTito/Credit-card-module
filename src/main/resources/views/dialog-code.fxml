@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox fx:id="dialogVBox" alignment="CENTER" prefHeight="640" prefWidth="480" spacing="10"
+      style="-fx-background-color: #104B8F;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.company.com.presentation.controllers.DialogViewController">
+    <ImageView fitHeight="78.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../images/logo-simple-bg.png"/>
+        </image>
+    </ImageView>
+    <Label text="El correo ha sido enviado a " textFill="WHITE">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="emailTo" layoutX="100.0" layoutY="550.0" text="your email here" textFill="WHITE">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </Label>
+    <Label/>
+    <TextField fx:id="inputCode" text="" layoutX="48.0" maxHeight="126" maxWidth="280.0" prefHeight="35.0" prefWidth="280.0" promptText="xxxxx">
+        <font>
+            <Font size="16.0"/>
+        </font>
+    </TextField>
+    <Button onAction="#validCode" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="35.0" prefWidth="112.0"
+            style="-fx-background-color: #ffffff;" text="Ingresar " textAlignment="RIGHT">
+        <font>
+            <Font size="16.0"/>
+        </font>
+        <VBox.margin>
+            <Insets top="24.0"/>
+        </VBox.margin>
+    </Button>
+</VBox>

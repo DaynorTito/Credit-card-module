@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane
+        fx:id="container"
+        prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="org.jala.university.presentation.controllers.CardApplicationEmploymentInformationController">
+    <children>
+        <BorderPane layoutX="65.0" layoutY="35.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="75.0" prefWidth="1280.0" style="-fx-background-color: #191970;"
+                            BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="cardApplicationLabel" layoutX="195.0" layoutY="14.0"
+                               text="Formulario de solicitud para una tajeta de credito" textFill="WHITE">
+                            <font>
+                                <Font size="32.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <center>
+                <AnchorPane prefHeight="914.0" prefWidth="1041.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="PersonalInformationLabel" layoutX="504.0" layoutY="32.0"
+                               text="Información laboral ">
+                            <font>
+                                <Font size="32.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="typeOfEmploymentLabel" layoutX="292.0" layoutY="108.0" text="Tipo de empleo">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="workAddressTextField" layoutX="192.0" layoutY="252.0" prefHeight="43.0"
+                                   prefWidth="875.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+
+                        <TextField fx:id="monthlyIncomeTextField" layoutX="192.0" layoutY="471.0" prefHeight="43.0"
+                                   prefWidth="386.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+
+                        <TextField fx:id="nameOfPlaceOfWorkTextField" layoutX="676.0" layoutY="146.0" prefHeight="43.0"
+                                   prefWidth="386.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                        <Label fx:id="nameOfPlaceOfWorkLabel" layoutX="679.0" layoutY="108.0"
+                               text="Nombre del lugar de trabajo(opcional)">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="typeOfEmploymentComboBox" layoutX="190.0" layoutY="146.0"
+                                  onAction="#selectTypeOfEmployment" prefHeight="43.0" prefWidth="386.0"/>
+                        <Label fx:id="workAddressLabel" layoutX="510.0" layoutY="215.0" text="Direccion de Trabajo">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="monthlyIncomeLabel" layoutX="286.0" layoutY="426.0" text="Ingreso Mensual">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="dateOfHireLabel" layoutX="263.0" layoutY="316.0" text="Fecha de contratacion">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="referenceNumberTextField" layoutX="680.0" layoutY="360.0" prefHeight="43.0"
+                                   prefWidth="386.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                        <Label fx:id="referenceNumberLabel" layoutX="741.0" layoutY="316.0" text="Numero de referencia">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <Button fx:id="backButton" layoutX="197.0" layoutY="578.0" mnemonicParsing="false"
+                                onAction="#backEvent" prefHeight="43.0" prefWidth="245.0"
+                                style="-fx-background-color: #191970;" text="Atras" textFill="WHITE">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="step2Button" layoutX="558.0" layoutY="578.0" mnemonicParsing="false"
+                                prefHeight="43.0" prefWidth="245.0" style="-fx-background-color: #191970;"
+                                text="Paso2/2" textFill="WHITE">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                        <Button fx:id="finishButton" layoutX="894.0" layoutY="578.0" mnemonicParsing="false"
+                                onAction="#finishEvent" prefHeight="43.0" prefWidth="245.0"
+                                style="-fx-background-color: #191970;" text="Finalizar" textFill="WHITE">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Button>
+                        <DatePicker fx:id="dateHire" layoutX="189.0" layoutY="360.0" prefHeight="44.0"
+                                    prefWidth="389.0">
+                            <style>
+                                -fx-font-size: 18.0;
+                            </style>
+                        </DatePicker>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720" prefWidth="1280" style="-fx-background-color: #104B8F;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jala.university.presentation.controllers.SignInController">
+    <children>
+        <ImageView fitHeight="245.0" fitWidth="368.0" layoutX="528.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/logo-app.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="321.0" layoutY="433.0" />
+        <TextField fx:id="email" layoutX="489.0" layoutY="428.0" prefHeight="32.0" prefWidth="358.0" promptText="tucorreo@gmail.com" />
+        <Label layoutX="490.0" layoutY="306.0" prefHeight="60.0" prefWidth="530.0" text="Iniciar sesion con correo" textFill="WHITE">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button id="send-code" layoutX="726.0" layoutY="474.0" mnemonicParsing="false" onAction="#sendCodeToEmail" style="-fx-background-color: #ffffff;" text="Enviar Codigo">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Separator layoutX="588.0" layoutY="555.0" prefHeight="2.0" prefWidth="161.0" />
+        <Button id="request-credit-card" layoutX="472.0" layoutY="607.0" mnemonicParsing="false" onAction="#navigateToRequest" prefHeight="35.0" prefWidth="390.0" style="-fx-background-color: #ffffff;" text="Solicitar Tarjeta">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Label layoutX="487.0" layoutY="391.0" text="Correo Electronico" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

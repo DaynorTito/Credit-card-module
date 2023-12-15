@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: org.jala.university.controllers.RequestCreditCardControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.377 s <<< FAILURE! -- in org.jala.university.controllers.RequestCreditCardControllerTest
+org.jala.university.controllers.RequestCreditCardControllerTest.testReturnRequestCreditCardStatus -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.db" is null
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3195)
+	at org.jala.university.controllers.RequestCreditCardControllerTest.testReturnRequestCreditCardStatus(RequestCreditCardControllerTest.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.db" is null
+	at org.jala.university.domain.repository.RequestCreditCardAccountRepository.insertOne(RequestCreditCardAccountRepository.java:25)
+	at org.jala.university.controllers.RequestCreditCardController.execute(RequestCreditCardController.java:34)
+	at org.jala.university.controllers.RequestCreditCardController.execute(RequestCreditCardController.java:20)
+	at org.jala.university.controllers.RequestCreditCardControllerTest.lambda$testReturnRequestCreditCardStatus$1(RequestCreditCardControllerTest.java:63)
+	... 2 more
+
