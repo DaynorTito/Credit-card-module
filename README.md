@@ -16,12 +16,4 @@ Se hizo uso de :
 - **Mockito** para crear test, simular el acceso a una base de datos real.
 - **Junit5** para realizar las pruebas unitarias de todo el proyecto.
 
-### Autores
-- David Lezama Trejo
-- Gadi Medero Gabriel
-- Carol Sivila Ramirez
-- Alejandro Valencia Rodriguez
-- Andres Rojas Espinoza
-- Daynor Tito Condori
-
 La documentacion detallada se encuentra en la Wiki.
