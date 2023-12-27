@@ -1,6 +1,6 @@
 # Credit card module
 
-### Authors
+### Descripcion
 
 El proyecto es un diseño para una aplicacion de gestion de targetas de credito para un banco, desde la solicitud de una targeta, hasta realizar transacciones, realizar pagos automaticos, pagos manuales. Se desarrollo el proyecto utilizando la arquitectura MVC (Modelo Vista Controlador).
 
